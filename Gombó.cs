@@ -1,5 +1,5 @@
 /*
-  C:\Temp\phingi>csc.exe -r:System.Windows.Forms.dll,System.Drawing.dll gomb.cs && gomb.exe
+  csc.exe -r:System.Windows.Forms.dll,System.Drawing.dll -target:winexe -win32icon:Jonas-Rask-Danish-Royalty-Free-Plus.ico Gombó.cs
 */
 using System;
 using System.Windows.Forms;
