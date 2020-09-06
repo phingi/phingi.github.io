@@ -16,7 +16,7 @@
 <body>
   <script src="js/scripts.js"></script>
   
-<h3>A C# fejlesztő környezet beállítása</h3>
+<h3>Egy mninimalista C# fejlesztő környezet beállítása</h3>
   
 <h4>Notepad++ -szal</h4>
 <ul>
@@ -38,7 +38,9 @@
     <ul>
       <li><a href="https://dotnet.myget.org/F/roslyn/api/v2/package/Microsoft.Net.Compilers.Toolset/3.8.0-1.20330.5">download version 3.8.0-1.20330.5</a>
     </ul>
-  <li>unzip Microsoft.Net.Compilers.Toolset.3.8.0-1.20330.5.nupkg\tasks\net472
+  <li>A <code>Microsoft.Net.Compilers.Toolset.3.8.0-1.20330.5.nupkg\tasks\net472</code> könyvtár kicsomagolása, ebben lesz a "csc.exe"
+  <li>Fordítás pl: <code>csc.exe -r:System.Windows.Forms.dll,System.Drawing.dll -target:winexe -win32icon:icon.ico Fájlnév.cs<code>
+  <li>Fordítás és futtatás pl: <code>csc.exe -r:System.Windows.Forms.dll,System.Drawing.dll -target:winexe -win32icon:icom.ico Fájlnév.cs && Fájlnév.exe<code>
 </ul>
 
 </body>
