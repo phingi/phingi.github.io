@@ -1,4 +1,4 @@
-# "C# Windows Form Tutorial"
+C# - Windows Form Development "Tutorial"
 
 ## Egy minimalista C# fejlesztő környezet beállítása
 
