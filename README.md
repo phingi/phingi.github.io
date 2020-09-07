@@ -15,13 +15,13 @@ Ha a rendszeren nem található meg a csc.exe, akkor például letölthetjük a 
 Mivel ez a fájl a '*nupkg*' kiterjesztés ellenére valójában egy ZIP fájl, nyugodtan nevezzük át a kiterjesztést 'zip'-re *(a Windows ezt a lépést jellemzően nehezményezi, de ezzel nem kell foglalkozni)*, majd a Fájlkezelő-vel lépjünk bele a fájlba *(a Windows ezt a lépést is általában nehezményezi, mert 'gyanús' neki az Internet-ről letöltött ZIP fájl, de jelen esetben ezzel sem kell foglalkozni)* és másoljuk ki a '**tasks\net472**' könyvtárat egy tetszőleges helyre. *(Én általában a telepítést nem igénylő programokat a C:\Programs könyvtárba teszem.)* Ettől kezdve, vagy a beírjuk a csc.exe elé a teljes elérési útját *(a TAB segítségével ez nem túl bonyolult...)*, vagy ha hozzáadtuk a könyvtárat a '*PATH*'-hoz, akkor a fordító bármely könyvtárban elindul a csc.exe parancs hatására.
 
 Ezt követően a legegyszerűbb program esetén fordítás valahogy így néz ki:
-`csc.exe -r:System.Windows.Forms.dll Fájlnév.cs
+>csc.exe -r:System.Windows.Forms.dll Fájlnév.cs
 
 Használhatunk többféle parancssori kapcsolót, például így:
 >csc.exe -platform:x64 -target:winexe -win32icon:icon.ico -debug+ -r:System.Windows.Forms.dll,System.Drawing.dll Fájlnév.cs
 
 Ha a sikeres fordítás után rögtön futtatni is szeretnénk a programot:
-> csc.exe -r:System.Windows.Forms.dll Fájlnév.cs **&&** Fájlnév.exe
+>csc.exe -r:System.Windows.Forms.dll Fájlnév.cs **&&** Fájlnév.exe
 
 ### Notepad++
 
