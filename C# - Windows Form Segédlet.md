@@ -1,10 +1,12 @@
 # C# - Windows Form Development "Tutorial"
 
+Jelen írásnak nem célja egy teljes körű C# segédlet, vagy kézikönyv elkészítése, sokkal inkább célja annak bemutatása, hogy olyan nehézsúlyú fejlesztői környezetek nélkül, mint például a Microsoft Visual Studio, hogyan lehet az egyszerű parancssoros programoknál felhasználó barátabb programokat készíteni.
+
 ## Egy minimalista C# fejlesztő környezet beállítása
 
 ### Parancssor
 
-A programok fordításához szülséges a **csc.exe**, melyet legegyszerűbben a '**where /r c:\ csc.exe**' paranccsal lehet megtalálni.
+A C#-ban írt programok fordításához szülséges a **csc.exe**, melyet legegyszerűbben a '**where /r c:\ csc.exe**' paranccsal lehet megtalálni.
 Az ezt a programot tartalmazó könyvtárat célszerű hozzáadni a **PATH** környezeti változóhoz: Windows 10 alatt a Gépház-ban a kereső mezőbe elég beírni, hogy *"körn"* és a listából kiválaszttani *"A fiók környezeti változóinak szerkesztése"* lehetőséget, majd a felhasználói változók között a '*Path*' értékéhez *(ami alapból valami ilyesmi: "C:\Users\...\AppData\Local\Microsoft\WindowsApps")* hozzáfűzni. Azaz, ha például a *cs.exe* a '*C:\Programs\net572*' könyvtárban van, akkor a művelet végén a '*Path*' értéke valami ilyesmi lesz: '*C:\Users\...\AppData\Local\Microsoft\WindowsApps;C:\Programs\net472)*'.
 Ha több cs.exe is van, akkor javaslom a legrövidebb elérési úttal rendelkezőt választani. *(Jelen írás szempontjából a verziónak nincs gyakorlati jelentősége.)*
 
