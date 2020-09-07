@@ -86,8 +86,8 @@ class WinFormsHelloWorldProgram : Form
 
     WinFormsHelloWorldProgram()
     {
-        Text = "Click Me!";
-        Click += new EventHandler (Button_Click);
+        this.Text = "Click Me!";
+        this.Click += new EventHandler (Button_Click);
     }
 
     void Button_Click (object sender, EventArgs e)
