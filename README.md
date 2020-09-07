@@ -34,16 +34,31 @@ A Notepad++ elindítását követően
   4. Ha ez sikeres, akkor a programok futtathatóak a
   5. Bővítmények -> CS-Script -> Run (F5) menüpontban.
 
-#### Egy egyszerű példa:
+#### A létező legegyszerűbb példa:
 ```
-// csc.exe -r:System.Windows.Forms.dll -r:System.Drawing.dll WinFormsHelloWorldProgram.cs && WinFormsHelloWorldProgram.exe
+// csc.exe -r:System.Windows.Forms.dll WinFormsMinimal.cs && WinFormsMinimal.exe
+
+using System.Windows.Forms;
+
+class WinFormsMinimal
+{
+    public static void Main()
+    {
+        Application.Run( new Form() );
+    }
+}
+```
+
+#### Egy egyszerű, de "értelmes" példa:
+```
+// csc.exe -r:System.Windows.Forms.dll WinFormsHelloWorldProgram.cs && WinFormsHelloWorldProgram.exe
 
 using System;
 using System.Windows.Forms;
 
 class WinFormsHelloWorldProgram : Form
 {
-	public static void Main()
+    public static void Main()
     {
         Application.Run( new WinFormsHelloWorldProgram() );
     }
@@ -58,6 +73,5 @@ class WinFormsHelloWorldProgram : Form
     {
         MessageBox.Show ("Button Clicked!");
     }
-
 }
 ```
