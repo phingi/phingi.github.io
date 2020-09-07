@@ -31,8 +31,8 @@ A Notepad++ elindítását követően
   1. indítsuk ez a Plugin Manager-t:
   2. Bővítmények -> Plugin Manager -> Show Plugin Manager
   3. Válasszuk ki az 'Available' fülön a 'CS-Script (C# INtelisense)' csomagot és telepítsük fel.
-Ha ez sikeres, akkor a programook futtathatóak a
-  1. Bővítmények -> CS-Script -> Run (F5) menüpontban.
+  4. Ha ez sikeres, akkor a programook futtathatóak a
+  5. Bővítmények -> CS-Script -> Run (F5) menüpontban.
 
 #### Egy egyszerű példa:
 ```
