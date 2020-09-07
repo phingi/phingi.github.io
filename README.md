@@ -31,9 +31,9 @@ A Notepad++ elindítását követően
   4. Ha ez sikeres, akkor a programok futtathatóak a
   5. Bővítmények -> CS-Script -> Run (F5) menüpontban.
 
-### Példaprogramok
+## Példaprogramok
 
-#### A létező legegyszerűbb példa:
+### A létező legegyszerűbb példa:
 ```
 // csc.exe -r:System.Windows.Forms.dll WinFormsMinimal.cs && WinFormsMinimal.exe
 
@@ -49,7 +49,7 @@ class WinFormsMinimal
 ```
 *Megjelenít egy alapértelmezett méretű, üres Form-ot (ablakot). Mivel itt Form-ra nem tudunk hivatkozni, így nem sokat lehet vele kezdeni, viszont az látszik, hogy a fordítás megtörtént és a program fut.*
 
-#### A létező legegyszerűbb példa, továbbfejlesztve:
+### A létező legegyszerűbb példa, továbbfejlesztve:
 ```
 // csc.exe -r:System.Windows.Forms.dll WinFormsMinimal+.cs && WinFormsMinimal+.exe
 
@@ -67,7 +67,7 @@ class WinFormsMinimal
 ```
 *A Form-hoz rendeltünk egy nevet, így tudunk rá hivatkozni és további műveleteket végezni. Jelen esetben beállítjuk az ablak címfeliratát.*
 
-#### Egy egyszerű, de "értelmes" példa:
+### Egy egyszerű, de "értelmes" példa:
 ```
 // csc.exe -r:System.Windows.Forms.dll WinFormsHelloWorldProgram.cs && WinFormsHelloWorldProgram.exe
 
@@ -93,4 +93,4 @@ class WinFormsHelloWorldProgram : Form
     }
 }
 ```
-*...
+*... Itt már több dolgot is el kell magyarázni...
