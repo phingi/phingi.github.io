@@ -1,9 +1,6 @@
-# teszt
-
+# "C# Windows Form Tutorial"
 
 ## Egy minimalista C# fejlesztő környezet beállítása
-
-
 
 ### Parancssor
 
