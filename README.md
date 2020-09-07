@@ -50,7 +50,7 @@ class WinFormsMinimal
     }
 }
 ```
-*Megjelenít egy alapértgelmezett méretű, üres Form-ot (ablakot). Mivel itt Form-ra nem tudunk hivatkozni, így nem sokat lehet vele kezdeni, viszont az látszik, hogy a fordítás megtörtént és a program fut.
+*Megjelenít egy alapértelmezett méretű, üres Form-ot (ablakot). Mivel itt Form-ra nem tudunk hivatkozni, így nem sokat lehet vele kezdeni, viszont az látszik, hogy a fordítás megtörtént és a program fut.*
 
 #### A létező legegyszerűbb példa, továbbfejlesztve:
 ```
@@ -68,7 +68,7 @@ class WinFormsMinimal
     }
 }
 ```
-*A Form-hoz rendeltünk egy nevet, így tudunk rá hivatkozni és további műveleteket végezni. Jelen esetben beállítjuk az ablak címfeliratát.
+*A Form-hoz rendeltünk egy nevet, így tudunk rá hivatkozni és további műveleteket végezni. Jelen esetben beállítjuk az ablak címfeliratát.*
 
 #### Egy egyszerű, de "értelmes" példa:
 ```
@@ -96,4 +96,4 @@ class WinFormsHelloWorldProgram : Form
     }
 }
 ```
-* ...
+*...
