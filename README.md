@@ -93,4 +93,4 @@ class WinFormsHelloWorldProgram : Form
     }
 }
 ```
-*... Itt már több dolgot is el kell magyarázni...
+*... Itt már több dolgot is el kell magyarázni...*
