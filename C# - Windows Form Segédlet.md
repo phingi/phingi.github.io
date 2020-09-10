@@ -70,9 +70,9 @@ class WinFormsMinimal
     }
 }
 ```
-*A Form-hoz rendeltünk egy nevet, így tudunk rá hivatkozni és további műveleteket végezni. Jelen esetben beállítjuk az ablak címfeliratát.*
+*A Form-hoz rendeltünk egy nevet, így tudunk rá hivatkozni és további műveleteket végezni, jelen esetben beállítjuk az ablak címfeliratát, illetve a sikeres fordítás után rögtön futtatjuk is.*
 
-### Egy egyszerű, de "értelmes" példa:
+### Egy egyszerű, de "értelmesebb" példa:
 ```
 // csc.exe -r:System.Windows.Forms.dll WinFormsHelloWorldProgram.cs && WinFormsHelloWorldProgram.exe
 
