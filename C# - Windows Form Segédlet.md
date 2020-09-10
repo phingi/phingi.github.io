@@ -17,7 +17,7 @@ Ezt követően a legegyszerűbb program esetén fordítás valahogy így néz ki
 >csc.exe -r:System.Windows.Forms.dll Fájlnév.cs
 
 Több forrásfájl *(\*.cs)* esetén... :
->csc.exe -r:System.Windows.Forms.dll Fájlnév1.cs Fájlnév2.cs \sokcsv\*.csv
+>csc.exe -r:System.Windows.Forms.dll Fájlnév1.cs Fájlnév2.cs \sokcsv\\\*.csv
 
 Használhatunk többféle parancssori kapcsolót *(melyek neve jobbára önmagáért beszél...)*, például így:
 >csc.exe -platform:x64 -target:winexe -win32icon:icon.ico -debug+ -r:System.Windows.Forms.dll,System.Drawing.dll /out: AzÉnProgramom.exe Fájlnév.cs 
