@@ -27,7 +27,7 @@ Ha a sikeres fordítás után rögtön futtatni is szeretnénk a programot:
 
 ### Notepad++
 
-A Notepad++ egy "egyszerű" szövegszerkesztő, melyhez számtalan kiegészítő érhető el, többek között egy komplett .NET fordító is. E programot letölthetjük a [saját oldaláról](https://notepad-plus-plus.org/downloads) oldalról, vagy a 'v7.8.8 64-bit zip package' csomagot a [erről](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v7.8.8/npp.7.8.8.bin.x64.zip) a linkről.
+A Notepad++ egy "egyszerű" szövegszerkesztő, melyhez számtalan kiegészítő érhető el, többek között egy komplett .NET fordító is. E programot letölthetjük a [saját oldaláról](https://notepad-plus-plus.org/downloads) oldalról, vagy a 'v7.8.8 64-bit zip package' csomagot közvetlenül [erről](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v7.8.8/npp.7.8.8.bin.x64.zip) a linkről.
 
 A Notepad++ elindítását követően
   1. indítsuk ez a Plugin Manager-t:
