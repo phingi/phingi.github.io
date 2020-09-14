@@ -1,6 +1,6 @@
 # C# - Windows Form Development "Tutorial"
 
-Jelen írásnak nem célja egy teljes körű C# segédlet, vagy kézikönyv elkészítése, sokkal inkább célja annak bemutatása, hogy olyan nehézsúlyú fejlesztői környezetek nélkül, mint például a Microsoft Visual Studio, hogyan lehet az egyszerű parancssoros programoknál felhasználó barátabb programokat készíteni.
+Jelen írásnak nem célja egy teljes körű C# segédlet, vagy valamiféle kézikönyv elkészítése, sokkal inkább cél annak bemutatása, hogy olyan nehézsúlyú fejlesztői környezetek nélkül, mint például a Microsoft Visual Studio, hogyan lehet az egyszerű parancssoros programoknál felhasználó barátabb programokat készíteni, a lehető legegyszerűbb eszközökkel.
 
 ## Egy minimalista C# fejlesztő környezet beállítása
 
