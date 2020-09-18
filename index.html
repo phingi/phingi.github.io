@@ -18,10 +18,23 @@
       }
     </style>
     <script src="js/scripts.js"></script>
+
     <script>
-      function myFunction() {
-        alert("Én egy üzenet doboz vagyok... :P");
-      }
+
+        function myFunction() {
+          alert("Én egy üzenet doboz vagyok... :P");
+        }
+
+        function g() {
+          var x = document.getElementById("szam");
+          if( x.innerHTML == NaN || parseInt(x.innerHTML) < 10 ) {
+              x.innerHTML = parseInt(x.innerHTML) + 1;
+          } else {
+              //x.innerHTML = "Vegyél meg ha tovább akarsz játszani! :P";
+              alert("Vegyél meg ha tovább akarsz játszani! :P");
+          }
+
+        }
     </script>
   </head>
   <body>
@@ -36,6 +49,11 @@
     <p>
       <input type="button" value="Nyomj meg!" onclick="myFunction()"> 
     </p>
-    <span id="szam"><span>
+                   
+    <p>
+      <span id="szam">0</span><br />
+      <input type="button" id="gombo" value="Gombó" onclick=g() />                   
+    </p>
+
   </body>
 </html>
