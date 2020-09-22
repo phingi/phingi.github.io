@@ -4,7 +4,9 @@ Jelen írásnak nem célja egy teljes körű C# segédlet, vagy valamiféle kéz
 
 ## Egy minimalista C# fejlesztő környezet beállítása
 
-### Parancssor
+### Parancssor használatával
+
+*(Ennek előnye, hogy még az olyan egyszerű szövegszerkesztő is elegendő, mint például a Windows Notepad-ja, bár nem túl kényelmes...)*
 
 A C#-ban írt programok fordításához szülséges a **csc.exe**, melyet legegyszerűbben a '**where /r c:\ csc.exe**' paranccsal lehet megtalálni.
 Az ezt a programot tartalmazó könyvtárat célszerű hozzáadni a **PATH** környezeti változóhoz: Windows 10 alatt a Gépház-ban a kereső mezőbe elég beírni, hogy *"körn"* és a listából kiválaszttani *"A fiók környezeti változóinak szerkesztése"* lehetőséget, majd a felhasználói változók között a '*Path*' értékéhez *(ami alapból valami ilyesmi: "C:\Users\\...\AppData\Local\Microsoft\WindowsApps")* hozzáfűzni. Azaz, ha például a *csc.exe* a '*C:\Programs\net572*' könyvtárban van, akkor a művelet végén a '*Path*' értéke valami ilyesmi lesz: '*C:\Users\\...\AppData\Local\Microsoft\WindowsApps;C:\Programs\net472)*'.
@@ -25,7 +27,7 @@ Használhatunk többféle parancssori kapcsolót *(melyek neve jobbára önmagá
 Ha a sikeres fordítás után rögtön futtatni is szeretnénk a programot:
 >csc.exe -r:System.Windows.Forms.dll Fájlnév.cs **&&** Fájlnév.exe
 
-### Notepad++
+### Notepad++ használatával
 
 A Notepad++ egy "egyszerű" szövegszerkesztő, melyhez számtalan kiegészítő érhető el, többek között egy komplett .NET fordító is. E programot letölthetjük a [saját oldaláról](https://notepad-plus-plus.org/downloads) oldalról, vagy a 'v7.8.8 64-bit zip package' csomagot közvetlenül [erről](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v7.8.8/npp.7.8.8.bin.x64.zip) a linkről.
 
@@ -98,4 +100,8 @@ class WinFormsHelloWorldProgram : Form
     }
 }
 ```
+
 *... Itt már több dolgot is el kell magyarázni...*
+
+Az első fontos különbség, hogy a létrehozott osztály leszármazottja lesz a "Form" osztálnyak *(ezért örökli annak minden tulajdonságát)*, így ha létrehozunk belőle egy példányt, akkor egy a Form osztállyal egyenértékű példány jön létre. Az öröklés folytán ennek a példánynak lesz például "Text" tulajdonsága, melyre a **this** kulcsszóval hivatkozhatunk, vagy akár el is hagyhatjuk.
+
