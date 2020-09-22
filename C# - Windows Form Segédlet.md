@@ -103,5 +103,5 @@ class WinFormsHelloWorldProgram : Form
 
 *... Itt már több dolgot is el kell magyarázni...*
 
-Az első fontos különbség, hogy a létrehozott osztály leszármazottja lesz a "Form" osztálnyak *(ezért örökli annak minden tulajdonságát)*, így ha létrehozunk belőle egy példányt, akkor egy a Form osztállyal egyenértékű példány jön létre. Az öröklés folytán ennek a példánynak lesz például "Text" tulajdonsága, melyre a **this** kulcsszóval hivatkozhatunk, vagy akár el is hagyhatjuk.
+Az első fontos különbség, hogy a létrehozott osztály leszármazottja lesz a "Form" osztálynak *(örökli annak minden tulajdonságát)*, így ha létrehozunk belőle egy példányt, akkor egy a Form osztállyal egyenértékű példány jön létre. Az öröklés folytán ennek a példánynak lesz például "Text" tulajdonsága, melyre a **this** kulcsszóval hivatkozhatunk, vagy akár el is hagyhatjuk.
 
