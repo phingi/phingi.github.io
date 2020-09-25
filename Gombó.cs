@@ -1,5 +1,5 @@
 /*
-  csc.exe -r:System.Windows.Forms.dll,System.Drawing.dll -target:winexe -win32icon:Jonas-Rask-Danish-Royalty-Free-Plus.ico GombÛ.cs
+  csc.exe -r:System.Windows.Forms.dll,System.Drawing.dll -target:winexe -win32icon:Gomb√≥.ico Gomb√≥.cs
 */
 using System;
 using System.Windows.Forms;
@@ -8,9 +8,9 @@ using System.Drawing;
 public class Program : Form
 {
 
-	Button GombÛ;
-	Label sz·m;
-	int gombnyom·ssz·ml·lÛ=0;
+	Button Gomb√≥;
+	Label sz√°m;
+	int gombnyom√°ssz√°ml√°l√≥=0;
 
 	[STAThread]
 	public static void Main()
@@ -20,27 +20,27 @@ public class Program : Form
 
 	public Program()
 	{
-		Text = "A GombÛ 1";
+		Text = "A Gomb√≥ 1";
 		
-		GombÛ = new Button();
-		Controls.Add(GombÛ);
-		GombÛ.Text="nyomj meg :)";
-		GombÛ.Size = new Size(100, 20);
-		GombÛ.Location=new Point(10, 10);
-		GombÛ.Click += new EventHandler(buttonclick);
+		Gomb√≥ = new Button();
+		Controls.Add(Gomb√≥);
+		Gomb√≥.Text="nyomj meg :)";
+		Gomb√≥.Size = new Size(100, 20);
+		Gomb√≥.Location=new Point(10, 10);
+		Gomb√≥.Click += new EventHandler(buttonclick);
 		
-		sz·m=new Label();
-		sz·m.Text="0";
-		sz·m.Size = new Size(100, 20);
-		sz·m.Location=new Point(10, 50);
-		Controls.Add(sz·m);
+		sz√°m=new Label();
+		sz√°m.Text="0";
+		sz√°m.Size = new Size(100, 20);
+		sz√°m.Location=new Point(10, 50);
+		Controls.Add(sz√°m);
 	}
 
 
 	private  void buttonclick (object sender, EventArgs e)
 	{
-		gombnyom·ssz·ml·lÛ+=1;
-		sz·m.Text=gombnyom·ssz·ml·lÛ.ToString();
+		gombnyom√°ssz√°ml√°l√≥+=1;
+		sz√°m.Text=gombnyom√°ssz√°ml√°l√≥.ToString();
 	}
 	
 }
